@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظامي المحاسبي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>منصة نظامي المحاسبي</h1>
+        <p>تسهل اختيار الأنظمة المحاسبية للشركات ورواد الأعمال</p>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>مرحبًا بك في منصة نظامي المحاسبي</h2>
+            <p>ابدأ باختيار نوع شركتك والمميزات المطلوبة لتحصل على توصيات تناسب احتياجاتك.</p>
+        </section>
+        <section class="form-section">
+            <h2>اختر نوع شركتك</h2>
+            <form id="business-form">
+                <label for="business-type">نوع الشركة:</label>
+                <select id="business-type" required>
+                    <option value="">اختر نوع الشركة</option>
+                    <option value="small">شركة صغيرة</option>
+                    <option value="medium">شركة متوسطة</option>
+                    <option value="large">شركة كبيرة</option>
+                    <option value="startup">مشروع ناشئ</option>
+                </select>
+
+                <label for="features">المميزات المطلوبة:</label>
+                <select id="features" required>
+                    <option value="">اختر المميزات</option>
+                    <option value="basic">نظام أساسي</option>
+                    <option value="advanced">نظام متقدم</option>
+                    <option value="erp">نظام ERP</option>
+                </select>
+
+                <button type="submit">إظهار النتائج</button>
+            </form>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>النتائج</h2>
+            <p id="system-choice"></p>
+            <ul id="results-list"></ul>
+            <button id="reset-button">إعادة الحساب</button>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 - نظامي المحاسبي</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
